@@ -44,40 +44,6 @@ module.exports = {
                 ]
             }
         ]
-        // {
-        //     '/mathematics/' :[
-        //         '',
-        //         'one',
-        //         'two'
-        //     ],
-        //     '/Vue/':[
-        //         ''
-        //     ],
-        //     '/node':[
-        //         ''
-        //     ],
-        //     '/react/':[
-        //         ''
-        //     ],
-            
-        //     '/visualization/':[
-        //         {
-        //             '':'/visualization/guide/'
-        //         },
-        //         {
-        //             'document':'/visulization/document/Link.md'
-        //         }
-        //     ]
-        // }
-        // {
-            //     title: 'Group 1',   // 必要的
-            //     path: '/foo/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-            //     collapsable: false, // 可选的, 默认值是 true,
-            //     sidebarDepth: 1,    // 可选的, 默认值是 1
-            //     children: [
-            //       '/'
-            //     ]
-            //   },
     },
     configureWebpack: {
         resolve: {
