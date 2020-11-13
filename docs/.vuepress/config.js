@@ -9,7 +9,7 @@ module.exports = {
             { text: 'Vue', link: '/Vue/' },
             { text: 'React', link: '/react/' },
             { text: 'Node', link: '/node/' },
-            { text: 'Typescripte', link: '/ts/' },
+            { text: 'Typescript', link: '/ts/' },
             { text: 'Mathematics', link: '/mathematics/' },
             { text: 'Visualization', link: '/visualization/guide/' },
           ],
