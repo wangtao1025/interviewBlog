@@ -1,6 +1,7 @@
 module.exports = {
     title: 'Hello',
     description: 'Just playing around',
+    base: '/MyBlog/',
     themeConfig: {
         logo: '/index.jpg',
         nav: [
