@@ -20,6 +20,20 @@ module.exports = {
                 sidebarDepth:2
             },
             {
+                title:'Typescript',
+                path:'/ts/',
+                children:[
+                    {
+                        title:'基础类型',
+                        path:'/ts/basicType.md'
+                    },
+                    {
+                        title:'变量声明',
+                        path:'/ts/variable.md'
+                    }
+                ]
+            },
+            {
                 title:'可视化',
                 path:'/visualization/guide',
                 children:[
