@@ -10,6 +10,7 @@
 
 - 需要配置哪些？
 
+
   - ```js
     // 首先需要npm init -y
     // 然后下载rollup typescript等
@@ -20,6 +21,39 @@
     
     // 然后需要执行tsc --init 产生一个tsconfig.json，记得将module改成rollup支持的es2015或者esnext
     ```
+    
+- rollup.config.js的简单配置
+- ```js
+  import ts from 'rollup-plugin-typescript2'; // 解析ts的插件
+  import {nodeResolve} from '@rollup/plugin-node-resolve'; // 解析第三方模块的插件
+  import serve from 'rollup-plugin-serve'; // 启动一个本地服务的插件
+  import path from 'path';
+  
+  // rollup支持es6写法
+  export default {
+      input:'src/index.ts',
+      output:{
+          format:'iife', // 立即执行，表示打包后的结果是一个自执行函数，常用的还有umd主要是为了弄一个全局变量，我们只是为了看到ts转义为js的效果
+          file: path.resolve(__dirname,'dist/bundle.js'), // 出口文件
+          sourcemap:true, //根据源码产生映射文件
+      },
+      plugins:[
+          nodeResolve({ // 第三方文件的解析，比如使用各jq等等
+              extensions:['.js','.ts']
+          }),
+          ts({
+              tsconfig:path.resolve(__dirname, 'tsconfig.json') // 表示ts使用哪个配置文件
+          }),
+          serve({ // 本地开启一个服务实时看到打包后的效果
+              open:true,
+              openPage:'/public/index.html',
+              contentBase:'',
+              port:8080
+          })
+      ]
+  }
+  ```
+
 
 ## [基础类型](./basicType.md)
 ## [变量声明](./variable.md)
