@@ -4,6 +4,8 @@
 ```ts
 let isTrue:boolean = false;
 ```
+
+
 ## 数字
 
 - ts中数字和js中一样，都是浮点数
@@ -11,6 +13,8 @@ let isTrue:boolean = false;
 ```ts
 let num:number = 1;
 ```
+
+
 
 ## 字符串
 
@@ -28,6 +32,8 @@ let str:string = 'abc';
   I'll be ${ age + 1 } years old next month.`;
   ```
 
+
+
 ## 数组
 
 数组有两种定义方式
@@ -44,7 +50,8 @@ let str:string = 'abc';
     let list: Array<number> = [1, 2, 3];
     ```
 
-    
+
+
 
 ## 元组 Tuple
 
@@ -59,3 +66,31 @@ x = ['hello', 10]; // OK
 x = [10, 'hello']; // Error
 ```
 
+
+
+## 空值
+
+表示没有任何类型，一般使用在一个没有返回值的函数
+
+```ts
+function warin():void{
+    alert('This is my warning message')
+};
+// 只有null和undefined可以赋值给void
+```
+
+
+
+## Null和undefined
+
+和void相似，null和undefined是单独的两种类型，他们本身用处不大，默认情况下，null和undefined是所有类型的子类型（也就是例如你可以将null赋值给一个number类型的变量）
+
+但是一般在项目中开启`strictNullChecks`检测，也就是null和undefined只能赋值给他们自身还有any（其实还有void）
+
+
+
+## Symbol
+
+**注意**：我们在使用 `Symbol` 的时候，必须添加 `es6` 的编译辅助库,如下：
+
+![2020-01-05-20-49-18](../.vuepress/public/symbol.jpg)
