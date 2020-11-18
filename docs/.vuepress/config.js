@@ -28,6 +28,10 @@ module.exports = {
                         path:'/ts/basicType.md'
                     },
                     {
+                        title:'其他类型',
+                        path:'/ts/otherType.md'
+                    },
+                    {
                         title:'变量声明',
                         path:'/ts/variable.md'
                     }
