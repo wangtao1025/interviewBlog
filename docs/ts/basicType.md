@@ -6,6 +6,7 @@ let isTrue:boolean = false;
 ```
 
 
+
 ## 数字
 
 - ts中数字和js中一样，都是浮点数
@@ -68,7 +69,7 @@ x = [10, 'hello']; // Error
 
 
 
-## 空值
+## 空值 void
 
 表示没有任何类型，一般使用在一个没有返回值的函数
 
@@ -85,7 +86,7 @@ function warin():void{
 
 和void相似，null和undefined是单独的两种类型，他们本身用处不大，默认情况下，null和undefined是所有类型的子类型（也就是例如你可以将null赋值给一个number类型的变量）
 
-但是一般在项目中开启`strictNullChecks`检测，也就是null和undefined只能赋值给他们自身还有any（其实还有void）
+但是一般在项目中开启`strict、NullChecks`检测，也就是null和undefined只能赋值给他们自身还有any（其实还有void）
 
 
 
@@ -94,3 +95,19 @@ function warin():void{
 **注意**：我们在使用 `Symbol` 的时候，必须添加 `es6` 的编译辅助库,如下：
 
 ![2020-01-05-20-49-18](../.vuepress/public/symbol.jpg)
+
+## BigInt
+
+在ts3.2中内置，可以安全的存储和操作大整数，即使这个数字已经超过了js安全整数范围
+
+2^53 - 1
+
+## never类型
+
+never类型是永不存在类型的值，是其他所有类型的子类型，但是没有类型是never的子类型，或者可以赋值给never，即使是any也不行
+
+有三种情况是never类型
+
+1. 错误
+2. 死循环
+3. 类型判断时会出现never
