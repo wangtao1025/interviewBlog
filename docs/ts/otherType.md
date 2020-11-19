@@ -57,3 +57,9 @@ type Direction = 'up' | 'down' | 'left' | 'right'; // type 是定义类型别名
 let direction:Direction; // 和上面其实是一个意思
 ```
 
+## 函数类型
+
+
+
+
+
