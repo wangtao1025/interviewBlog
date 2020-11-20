@@ -59,7 +59,51 @@ let direction:Direction; // 和上面其实是一个意思
 
 ## 函数类型
 
+- 函数-考虑入参和函数的返回值
 
+  - 声明入参不赋值那就是any，（不要轻易使用any）
+
+  - 函数声明两种方式
+
+  - ```ts
+    function sum(a: string,b: string):string{
+        return a + b 
+    }
+    ```
+
+  - ```ts
+    // 如果使用表达式，你给他定义一个类型，你可以把兼容的函数赋予给他
+    let sum:(a:string, b:string) => string = (a:string, b:string) = {
+        reutrn a + b
+    }
+    ```
+
+    - ```ts
+        // 这种方式来定义函数类型明显过于长
+        // 所以可以使用type关键字
+        type Sum = (a:string, b:string) => string
+      ```
+- 可选参数---？  默认值--- =
+
+    - ```ts
+        let sum = (a:string, b?:string) => {
+            return a+b
+        }
+        // 还有另外一种写法
+        let sum1 = (a:string,b:string|undefined) => {
+            return a+b
+        }
+        // 但是这种方法在调用的时候，sum1('1'),会报错，也就是并不是b可以不传，而是不传也得给我来一个undefined，sum1('1',undefined)
+      ```
+    
+    - ```ts
+        // 函数参数的默认值
+        let sum = (a:string,b:string = 'b') => {
+            return a + b
+        }
+        // 这种情况下b不传也ok，因为b有默认值
+      ```
+- 剩余参数
 
 
 
