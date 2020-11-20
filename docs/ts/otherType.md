@@ -104,6 +104,26 @@ let direction:Direction; // 和上面其实是一个意思
         // 这种情况下b不传也ok，因为b有默认值
       ```
 - 剩余参数
+  ```ts
+    let sum = (a:string, b:string, ...c:string[]) => {
+        return a + b + c[0]
+    }
+  ```
+
+- [函数重载](https://ts.xcatliu.com/basics/type-of-function.html#%E9%87%8D%E8%BD%BD)
+  ```ts
+    // 希望把一个字符串或者数字转换成一个数组的需求
+    // 123 => [1,2,3] or '123' => ['1','2','3']
+    function toArray(value:number):number[];
+    function toArray(value:string):string[];
+    function toArray(value:number | string){
+        if(typeof value == 'string'){
+            return value.split('');
+        }else {
+            return value.toString().split('').map(item => parseInt(item))
+        }
+    }
+  ```
 
 
 

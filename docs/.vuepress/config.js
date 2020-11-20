@@ -43,6 +43,10 @@ module.exports = {
                         path:'/ts/otherType.md'
                     },
                     {
+                        title:'类',
+                        path:'/ts/class.md'
+                    },
+                    {
                         title:'变量声明',
                         path:'/ts/variable.md'
                     }
