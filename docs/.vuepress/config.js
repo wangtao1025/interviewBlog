@@ -20,6 +20,17 @@ module.exports = {
                 sidebarDepth:2
             },
             {
+                title:'Node',
+                path:'/node/',
+                sidebarDepth:2,
+                children:[
+                    {
+                        title:'高阶函数和Promise',
+                        path:'/node/Promise.md'
+                    }
+                ]
+            },
+            {
                 title:'Typescript',
                 path:'/ts/',
                 children:[
