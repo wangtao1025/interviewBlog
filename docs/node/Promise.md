@@ -43,7 +43,16 @@ class Promise{
     }
     
     then(onFulfilled, onRejected){
+        onFulfilled = typeof onFulfilled === 'function'? onFulfilled:v => v;
+        onRejected = typeof onRejected === 'function'? onRejected: v => {
+            throw v;
+        };
         
+        let promise2 = new Promise((resolve, reject) => {
+            
+        });
+        
+        return promise2;
     }
 }
 ```
