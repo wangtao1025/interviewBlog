@@ -10,6 +10,7 @@ module.exports = {
             { text: 'React', link: '/react/' },
             { text: 'Node', link: '/node/' },
             { text: 'Typescript', link: '/ts/' },
+            { text: '算法', link: '/算法/' },
             { text: 'Mathematics', link: '/mathematics/' },
             { text: 'Visualization', link: '/visualization/guide/' },
           ],
@@ -51,6 +52,11 @@ module.exports = {
                         path:'/ts/variable.md'
                     }
                 ]
+            },
+            {
+                title:'算法',
+                path:'/算法/',
+                sidebarDepth:2
             },
             {
                 title:'可视化',
