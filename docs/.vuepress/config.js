@@ -11,6 +11,7 @@ module.exports = {
             { text: 'Node', link: '/node/' },
             { text: 'Typescript', link: '/ts/' },
             { text: '算法', link: '/算法/' },
+            { text: 'npm', link: '/npm/' },
             { text: 'Mathematics', link: '/mathematics/' },
             { text: 'Visualization', link: '/visualization/guide/' },
           ],
@@ -57,6 +58,16 @@ module.exports = {
                 title:'算法',
                 path:'/算法/',
                 sidebarDepth:2
+            },
+            {
+                title:'NPM',
+                path:'/npm/',
+                children:[
+                    {
+                        title:'NRM',
+                        path:'/npm/nrm.md'
+                    }
+                ]
             },
             {
                 title:'可视化',
