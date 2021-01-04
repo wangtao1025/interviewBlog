@@ -6,6 +6,7 @@ module.exports = {
         logo: '/index.jpg',
         nav: [
             { text: 'Home', link: '/' },
+            { text: 'Menu', link: '/menu/' },
             { text: 'Vue', link: '/Vue/' },
             { text: 'React', link: '/react/' },
             { text: 'Node', link: '/node/' },
