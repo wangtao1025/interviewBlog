@@ -86,7 +86,7 @@ function warin():void{
 
 和void相似，null和undefined是单独的两种类型，他们本身用处不大，默认情况下，null和undefined是所有类型的子类型（也就是例如你可以将null赋值给一个number类型的变量）
 
-但是一般在项目中开启`strict、NullChecks`检测，也就是null和undefined只能赋值给他们自身还有any（其实还有void）
+但是一般在项目中开启`strictNullChecks`检测，也就是null和undefined只能赋值给他们自身还有any（其实还有void）
 
 
 

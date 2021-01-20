@@ -54,8 +54,18 @@
   }
   ```
 
+- 修改package.json
+
+- ```json
+  "scripts": {
+      "serve": "rollup -c -w"
+  }
+  ```
+
+  
 
 ## [基础类型](./basicType.md)
+
 ## [其他数据类型](./otherType.md)
 ## [变量声明](./variable.md)
 
