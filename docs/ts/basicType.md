@@ -102,6 +102,12 @@ function warin():void{
 
 2^53 - 1
 
+```ts
+let a:bigint = Bigint(1);
+```
+
+
+
 ## never类型
 
 never类型是永不存在类型的值，是其他所有类型的子类型，但是没有类型是never的子类型，或者可以赋值给never，即使是any也不行
@@ -111,3 +117,20 @@ never类型是永不存在类型的值，是其他所有类型的子类型，但
 1. 错误
 2. 死循环
 3. 类型判断时会出现never
+
+## 类型推导
+
+- 声明变量没有赋值时默认变量是any类型
+
+  - ```ts
+    let name;//类型为any
+    name = 'name';
+    name = 10
+    ```
+
+- 声明变量赋值时，则以赋值的变量为准
+
+  - ```ts
+    let name = 'name';//name会被推导为字符串类型
+    name = 10; // 报错：不能将类型number赋值给类型string
+    ```
