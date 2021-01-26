@@ -14,8 +14,8 @@
 
 ### 1月26日
 
-课时63--ts基本配置和构建 --100%
-
+课时64--ts基本配置和构建 --100%
+课时63--[ts基本数据类型](http://www.javascriptpeixun.cn/course/2272/task/142491/show) -- 100%
 
 
 *// 第一步:npm install typescript -g*
@@ -39,4 +39,8 @@ http://zhufengpeixun.com/jg-vue/typescript/1.html
 
 
 ### 1月27日
+
+任务65：[3.ts中类型](http://www.javascriptpeixun.cn/course/2272/task/142485/show)
+任务66：[4.问题答疑](http://www.javascriptpeixun.cn/course/2272/task/142515/show)
+任务67：[5.类型断言和判断](http://www.javascriptpeixun.cn/course/2272/task/142512/show)
 
