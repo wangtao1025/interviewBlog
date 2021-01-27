@@ -40,7 +40,11 @@ http://zhufengpeixun.com/jg-vue/typescript/1.html
 
 ### 1月27日
 
-任务65：[3.ts中类型](http://www.javascriptpeixun.cn/course/2272/task/142485/show)
-任务66：[4.问题答疑](http://www.javascriptpeixun.cn/course/2272/task/142515/show)
-任务67：[5.类型断言和判断](http://www.javascriptpeixun.cn/course/2272/task/142512/show)
+任务65：[3.ts中类型](http://www.javascriptpeixun.cn/course/2272/task/142485/show) -- 100%
+任务66：[4.问题答疑](http://www.javascriptpeixun.cn/course/2272/task/142515/show)  -- 100%
+任务67：[5.类型断言和判断](http://www.javascriptpeixun.cn/course/2272/task/142512/show) -- 100%
+
+### 1月28日
+[任务68：6.ts中的函数](http://www.javascriptpeixun.cn/course/2272/task/142503/show)
+[任务69：7.ts中的类](http://www.javascriptpeixun.cn/course/2272/task/142506/show)
 
