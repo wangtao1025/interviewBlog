@@ -50,6 +50,10 @@ module.exports = {
                         path:'/ts/class.md'
                     },
                     {
+                        title:'接口',
+                        path:'/ts/interface.md'
+                    },
+                    {
                         title:'变量声明',
                         path:'/ts/variable.md'
                     }
