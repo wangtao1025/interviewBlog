@@ -37,11 +37,11 @@ module.exports = {
                 title:'Typescript',
                 children:[
                     {
-                        title:'0:运行环境搭建',
+                        title:'1:运行环境搭建',
                         path:'/ts/'
                     },
                     {
-                        title:'基础类型',
+                        title:'2:基础类型',
                         path:'/ts/basicType.md'
                     },
                     {
