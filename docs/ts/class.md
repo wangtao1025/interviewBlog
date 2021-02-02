@@ -138,7 +138,32 @@ let animal = new Animal();
 console.log(animal.name);
 ```
 
-## 类的装饰器
+## 四.Super属性
+
+```ts
+class Animal {
+    say(message:string){
+        console.log(message);
+    } 
+    static getType(){
+        return '动物'
+    }
+}
+class Cat extends Animal {
+    say(){ // 原型方法中的super指代的是父类的原型
+        super.say('猫猫叫');
+    }
+    static getType(){ // 静态方法中的super指代的是父类
+        return super.getType()
+    }
+}
+let cat = new Cat();
+console.log(Cat.getType())
+```
+
+
+
+## 五.类的装饰器
 
 ### 1.装饰类
 
@@ -236,9 +261,11 @@ class Person {
 }
 ```
 
-#六.抽象类
-抽象类无法被实例化，只能被继承，抽象方法不能在抽象类中实现，只能在抽象类的具体子类中实现,而且必须实现。
+## 六.抽象类
 
+>  抽象类无法被实例化，只能被继承，抽象方法不能在抽象类中实现，只能在抽象类的具体子类中实现,而且必须实现。
+
+```ts
 abstract class Animal{
     name!:string;
     abstract speak():void
@@ -254,5 +281,7 @@ class Dog extends Animal{
         return 'wangwang'
     }
 }
-定义类型时void表示函数的返回值为空（不关心返回值类型，所有在定义函数时也不关心函数返回值类型）
+```
+
+> 定义类型时void表示函数的返回值为空（不关心返回值类型，所有在定义函数时也不关心函数返回值类型）
 

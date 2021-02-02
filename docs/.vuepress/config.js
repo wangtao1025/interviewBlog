@@ -35,8 +35,11 @@ module.exports = {
             },
             {
                 title:'Typescript',
-                path:'/ts/',
                 children:[
+                    {
+                        title:'0:运行环境搭建',
+                        path:'/ts/'
+                    },
                     {
                         title:'基础类型',
                         path:'/ts/basicType.md'
@@ -46,11 +49,11 @@ module.exports = {
                         path:'/ts/otherType.md'
                     },
                     {
-                        title:'类',
+                        title:'5:类',
                         path:'/ts/class.md'
                     },
                     {
-                        title:'接口',
+                        title:'6:接口',
                         path:'/ts/interface.md'
                     },
                     {
