@@ -14,7 +14,7 @@
 let name:string|number;
 ```
 
-**注意：当没有初始化的时候，只能调用两种类型的公共方法**
+**注意：当没有初始化的时候，只能调用两种类型的公共方法**（如果初始化时候进行了赋值，则可以调用赋值类型的方法）
 
 ### 非空断言---标识一定有值 ->! 
 
@@ -23,7 +23,7 @@ let el:HTMLElement|null = document.getElementById('#app');
 el!.style.color = 'red';
 ```
 
-还有另外一种运算符，?,`el?.style`相当于`el&&el.style`;
+还有另外一种运算符，?,`el?.style`相当于`el&&el.style`; el?.style.color = 'green'会报错，只能读取不能修改
 
 ### 断言操作
 
