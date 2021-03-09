@@ -85,7 +85,8 @@ function warin():void{
     alert('This is my warning message')
 };
 // 只有null和undefined可以赋值给void
-// 开始strickNullChecks的话，只能讲undefined赋值给void
+// 开始strickNullChecks的话，只能将undefined赋值给void
+// 不管是严格模式还是非严格模式，都不能将void赋值给null或者undefined
 ```
 
 
