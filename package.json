@@ -6,7 +6,7 @@
   "scripts": {
     "serve": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "deploy-gh": "npm run docs:build && bash scripts/deploy-gh.sh"
+    "upload": "npm run docs:build && bash scripts/deploy-gh.sh"
   },
   "keywords": [],
   "author": "",
