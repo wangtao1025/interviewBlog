@@ -17,4 +17,4 @@ git commit 规范
     <input type="file" multiple="multiple" webkitdirectory="webkitdirectory" />
     ```
 
-  - 
+  - [支持上传文件夹前端vue组件](https://www.npmjs.com/package/vue-simple-uploader)
