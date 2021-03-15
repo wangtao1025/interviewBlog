@@ -15,6 +15,7 @@ module.exports = {
             { text: 'npm', link: '/npm/' },
             { text: 'Mathematics', link: '/mathematics/' },
             { text: 'Visualization', link: '/visualization/guide/' },
+            { text: '其他', link: '/other/'}
           ],
         sidebar:[
             {

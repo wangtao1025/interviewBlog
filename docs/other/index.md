@@ -2,3 +2,19 @@ http://www.zhufengpeixun.com/grow/html/114.react+typescript.html#t23.%20git%E8%A
 
 
 git commit 规范
+
+
+
+
+
+
+
+## 前端上传
+
+- 上传文件夹
+
+  - ```html
+    <input type="file" multiple="multiple" webkitdirectory="webkitdirectory" />
+    ```
+
+  - 
